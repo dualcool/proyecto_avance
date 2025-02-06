@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/play">
+
+    <!-- Contenedor para las imágenes -->
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="680dp"
+        android:background="@drawable/button_background"
+        android:text="REGRESAR"
+        android:textSize="18sp" />
+
+    <GridLayout
+        android:id="@+id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="16dp">
+
+        <!-- Imagen incorrecta -->
+        <!-- Imagen incorrecta -->
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/perro"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:contentDescription="Imagen de un perro"/>
+
+        <!-- Imagen correcta (Caballo) -->
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/caballo"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:contentDescription="Imagen de un caballo"/>
+
+        <!-- Imagen incorrecta -->
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/gato"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:contentDescription="Imagen de un gato"/>
+
+        <!-- Imagen incorrecta -->
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/gallo"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:contentDescription="Imagen de un gallo"/>
+
+
+    </GridLayout>
+
+    <!-- Texto para la pregunta -->
+    <TextView
+        android:id="@+id/text_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="¿Cuál de estas imágenes es un caballo?"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <!-- Mensaje de respuesta -->
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

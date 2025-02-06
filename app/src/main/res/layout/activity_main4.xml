@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fin2"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:visibility="visible" />
+
+    <!-- Botón de Aciertos en la parte superior izquierda -->
+    <Button
+        android:id="@+id/btn_aciertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:text="Aciertos: 0"
+        android:textSize="18sp"
+        android:background="@color/material_dynamic_secondary30"
+        android:textColor="#FFFFFF"
+        android:padding="15dp" />
+
+    <!-- Botón de Errores en la parte superior derecha -->
+    <Button
+        android:id="@+id/btn_errores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="16dp"
+        android:text="Errores: 0"
+        android:textSize="18sp"
+        android:background="@color/material_dynamic_secondary30"
+        android:textColor="#FFFFFF"
+        android:padding="15dp" />
+
+    <!-- Imagen de resultado -->
+    <ImageView
+        android:id="@+id/img_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/fin_juego" /> <!-- Cambia "xxx" por el nombre de tu imagen -->
+
+
+    <!-- Botón para regresar al inicio -->
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="Inicio"
+        android:textSize="25sp"
+        android:background="@color/material_dynamic_secondary30"
+        android:textColor="#FFFFFF"
+        android:padding="10dp" />
+
+</RelativeLayout>
