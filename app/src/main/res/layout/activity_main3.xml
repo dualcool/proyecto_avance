@@ -83,7 +83,7 @@
         android:layout_marginTop="24dp"
         android:text="¿Cuál de estas imágenes es un caballo?"
         android:textSize="23sp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textStyle="bold"/>
 
     <!-- Mensaje de respuesta -->
